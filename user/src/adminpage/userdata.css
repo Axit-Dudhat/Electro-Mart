@@ -1,0 +1,124 @@
+.userdata {
+  min-height: 100vh;
+  background-color: rgb(237, 235, 234);
+  padding: 2rem 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.table-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table thead {
+  background: #f8fafc;
+}
+
+.user-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.user-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.user-table tbody tr:hover {
+  background: #f9fafb;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.username {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.email {
+  color: #059669;
+  font-weight: 600;
+}
+
+.password {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.delete-btn {
+  color: #ef4444;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .table-section {
+    padding: 1rem;
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+  .user-table {
+    font-size: 0.75rem;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-management {
+    padding: 1rem 0;
+  }
+  
+  .table-container {
+    font-size: 0.7rem;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .actions {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
